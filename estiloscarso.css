@@ -1,0 +1,375 @@
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{/*controla el scroll, mas lento*/
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Oswald', sans-serif;
+}
+
+.contenedor{
+    width: 90%;
+    max-width: 1200px;
+    overflow: hidden;
+    margin: auto; 
+    padding: 60px 0;
+}
+
+.header{ /*Fondo del encabezado*/
+    height: 100vh;
+    background-image: linear-gradient(to top, rgba(238, 171, 45, 0.308) 0%, rgba(255, 169, 8, 0.301) 100%), url(img/fibra\ optica.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.head{ /*Texto centrado en encabezado*/
+    
+    text-align: center;
+    padding: 0;
+    height: 100%;
+    display: flex; /*coloca uno al lado del otro*/
+    justify-content: center;/*centra*/
+    align-items: center;
+    flex-direction: column;/*uno abajo del otro*/
+    color: rgb(255, 2, 2);
+    
+}
+
+.menu-navegacion {
+    padding: 20px;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.resaltar {
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.menu-navegacion a{
+    color: rgb(255, 166, 0);
+    text-decoration: none;
+    margin-right: 2%;
+    
+} 
+
+.menu-navegacion a:hover {
+    text-decoration: underline;
+}
+
+.titulo-head {
+    font-size: 60px;
+    margin-bottom: 55px;
+    text-shadow: -4px 4px 0 rgba(0, 0, 0, 0.808);
+}
+
+.copy1 {
+    font-size: 40px;
+    text-shadow: -4px 4px 0 rgba(0, 0, 0, 0.808);
+}
+
+.copy{
+    font-weight: 300;
+    font-size: 25px;
+    text-shadow: -2px 2px 0 rgba(0, 0, 0, 0.808);
+}
+
+/*Servicios*/
+
+.subtitulo{
+    text-align: center;
+    font-weight: 300;
+    color: #9f8ad0;
+    margin-bottom: 40px;
+    font-size: 40px;
+}
+
+.contenedor-servicio{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.contenedor-servicio img{
+    width: 40%;
+}
+
+.checklist-servicio{
+    width: 45%;
+}
+
+.service{
+    margin-bottom: 20px;
+}
+
+.n-service{
+    margin-bottom: 7px;
+    color: #9f8ad0;
+}
+
+.number{ /*numeros de seccion servicios*/
+    display: inline-block;
+    background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+    width: 30px;
+    height: 30px; 
+    color: white;
+    text-align: center;
+    border-radius: 50%;
+    font-weight: 700;
+    line-height: 30px;
+    margin-right: 5px;
+}
+
+ 
+ 
+ /* Seccion Galeria*/
+ .titulo {
+    color: #1f1294c9;
+    font-size: 70px;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.portafolio {
+    background: #f2f2f2;
+}
+
+.galeria-port {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.imagen-port {
+    width: 30%;
+    margin-bottom: 10px;
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    box-shadow:  0 0 6px 0 rgba(0, 0, 0, .5);
+}
+
+.imagen-port > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.hover-galeria {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    transform: scale(0);
+    background: hsla(36, 100%, 47%, 0.301);
+    transition: transform .3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hover-galeria img {
+    width: 90px;
+}
+
+.hover-galeria p {
+     color: black;
+}
+
+.imagen-port:hover .hover-galeria {
+    transform: scale(1);
+}
+
+/*  Sección Expertos */
+
+ .experts{
+     display: flex;
+     justify-content: space-evenly;
+     align-items: center;
+     flex-wrap: wrap;
+ }
+
+ .cont-expert{
+     width: 30%;
+     text-align: center;
+     margin-bottom: 20px;
+ }
+
+ .cont-expert img{
+     width: 90%;
+     display: block;
+     margin: auto;
+     border-radius: 25%;
+ }
+
+ -n-expert{
+    display: inline-block;
+    margin-top: 20px;
+    width: 100%;
+    font-weight: 400;
+ }
+
+ /* Footer o pie de pagina */
+
+ footer{
+     background: #9f8ed0;
+     padding-bottom: 0.5px;
+ }
+
+ .footer-content{
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+     flex-wrap: wrap;
+     padding-top: 60px;
+     padding-bottom: 40px;
+ }
+
+.contac-us{
+    width: 40%;
+    color: white;
+}
+
+.brand{
+    font-weight: 500;
+    font-size: 40px;
+}
+
+.brand p{
+    font-weight: 500;
+}
+
+.social-media{
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.social-media-icon{
+    display: inline-block;
+    margin-left: 20px;
+    width: 33px;
+    height: 33px;
+    border: 1px solid white;
+    border-radius: 50%;
+    text-align: center;
+    color: white;
+}
+
+.social-media-icon:hover{
+    background: white;
+    color: #764ba2;
+}
+
+.social-media-icon img{
+    font-size: 30px;
+    height: 30px;
+    align-content: center;
+}
+
+.line{
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    height: 2px;
+    background: white;
+    margin-bottom: 60px;
+}
+
+.titulo-final {
+    color: rgba(110, 34, 34, 0.781);
+    text-align: center;
+}
+
+/* Adaptación a diferentes pantallas*/
+
+@media screen and (max-widht:800px){
+    .menu-navegacion{
+        width: 50%;
+    }
+
+    .titulo{
+        font-size: 40px;
+    }
+
+    .contenedor-servicio img{
+        width: 80%;
+        margin-bottom: 40px;
+    }
+    .checklist-servicio{
+        width: 80%;
+    }
+    .service{
+        margin-bottom: 30px;
+    }
+    .agregar-imagen{
+        width: 80%;
+    }
+    .img-galeria{
+        width: 45%;
+    }
+    .cont-expert{
+        width: 80%;
+    }
+
+    .footer-content{
+        justify-content: center;
+    }
+
+    .social-media{
+        width: 80%;
+        justify-content: space-evenly;
+    }
+
+    .social-media-icon{
+        margin-left: 0;
+    }
+
+    .social-media img{
+        margin-left: 0;
+    }
+    
+    .contac-us{
+        text-align: center;
+        width: 80%;
+        margin-bottom: 40px;
+    }
+}
+
+@media screen and (max-widht:500px){
+    .menu-navegacion{
+        width: 65%;
+    }
+    .hamburguer{
+        top: 20px;
+        right: 20px;
+    }
+    .titulo{
+        font-size: 30px;
+    }
+    .agregar-imagen{
+        width: 95%;
+    }
+    .img-galeria{
+        width: 95%;
+    }
+    .social-media{
+        width: 100%;
+    }
+    .contac-us{
+        width: 90%;
+    }
+}
